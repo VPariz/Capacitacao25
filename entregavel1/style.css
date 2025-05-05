@@ -1,0 +1,27 @@
+/* styles.css */
+.imagem-maior {
+    width: 33vw;   /* Ajusta o tamanho somente dessa imagem */
+    height: auto;   /* Mantém a proporção */
+  }
+
+  .imagem-menor {
+    width: 23vw;   /* Ajusta o tamanho somente dessa imagem */
+    height: auto;   /* Mantém a proporção */
+  }
+  .galeria{
+    display: flex;
+    border: 5px solid black;
+    width: auto;
+    height: max-content;
+    padding: 15px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .item{
+    border: 3px solid white;
+    width: 20vw;
+    height: auto;
+    margin: 1vw;
+  }

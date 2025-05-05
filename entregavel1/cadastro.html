@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Nós e Amarrações</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: rgb(171, 126, 189);">
+    <h1>Cadastre-se no site</h1>
+
+    <form>
+
+        <label for="campo_nome">Nome:</label>
+        <input type="text" placeholder="Digite seu nome" id="campo_nome" required>
+
+        <br><br>
+
+        <label for="campo_email">Email:</label>
+        <input type="email" placeholder="Digite seu email" id="campo_email" required>
+
+        <br><br>
+
+        <label for="campo_senha">Senha:</label>
+        <input type="password" placeholder="Digite sua senha" id="campo_senha" required>
+
+        <br><br><hr>
+
+        <h2>Nós ou Amarrações?</h2>
+        <!--campo radio-->
+        <input type="radio" name="Escolha" id="no" value="Nó">
+        <label for="no">Nós</label>
+
+        <br>
+        
+        <input type="radio" name="Escolha" id="amarracoes" value="Amarrações">
+        <label for="amarracoes">Amarrações</label>
+        
+        <br><br><hr>
+
+        <h3>Concorde com nossos termos e condições</h3>
+        <!--campo checkbox-->
+        <input type="checkbox" id="termos" required>
+        <label for="termos">Eu concordo com os <a href="https://www.letras.mus.br/exercito-brasileiro/1300634/" target="_blank">Termos</a></label>
+
+        <br>
+        
+        <input type="checkbox" id="condicoes" required>
+        <label for="condicoes">Eu concordo com as <a href="https://www.letras.mus.br/exercito-brasileiro/1440282/" target="_blank">Condições</a></label>
+
+        <br><br><hr>
+
+        <h3>Escolha uma cor de cabo solteiro:</h3>
+        <!--campo para selecionar um das opcoes-->
+        <select name="cor">
+            <option selected disabled value="">Selecione uma cor</option>
+            <option value="verde">Verde</option>
+            <option value="amarelo">Amarelo</option>
+            <option value="preto">Preto</option>
+        </select>
+
+        <br><br><hr>
+
+        <h3>Comente sua opinião:</h3>
+        <!--area de texto-->
+        <textarea rows="10" cols="40" name="opinião" placeholder="Digite aqui" ></textarea>
+
+
+        <br><br>
+
+        <!-- Carrega o som -->
+        <audio id="som" src="scr/som.mp3" preload="auto"></audio>
+
+        <!-- Botão para tocar o som -->
+        <button onclick="document.getElementById('som').play()" type="submit">ENVIAR FORMULÁRIO!</button>
+        
+
+         <!--submit sem graca-->
+        <input type="submit" value="Enviar Formulário">
+        
+    </form>
+
+    <hr>
+
+    <a href="index.html">Página Inicial</a>
+
+    <br>
+
+    <a href="Semanal.html">Nó da semana</a>
+
+    <br>
+
+    <a href="galeria.html">Galeria de amarrações</a>
+</body>
+</html>
